@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!--  Employee Beans  -->
+
+    <bean id="emp1" class="com.example.lab1.xmlconfig.lab1_3.Employee">
+        <constructor-arg index="0" value="101" type="int"/>
+        <constructor-arg index="1" value="Harry Potter"/>
+        <constructor-arg index="2" value="45000" type="double"/>
+    </bean>
+    <bean id="emp2" class="com.example.lab1.xmlconfig.lab1_3.Employee">
+        <constructor-arg index="0" value="102" type="int"/>
+        <constructor-arg index="1" value="Ron Weasly"/>
+        <constructor-arg index="2" value="55000" type="double"/>
+    </bean>
+    <bean id="emp3" class="com.example.lab1.xmlconfig.lab1_3.Employee">
+        <constructor-arg index="0" value="103" type="int"/>
+        <constructor-arg index="1" value="Hermione Granger"/>
+        <constructor-arg index="2" value="75000" type="double"/>
+    </bean>
+    <bean id="emp4" class="com.example.lab1.xmlconfig.lab1_3.Employee">
+        <constructor-arg index="0" value="104" type="int"/>
+        <constructor-arg index="1" value="Draco Malfoy"/>
+        <constructor-arg index="2" value="75000" type="double"/>
+    </bean>
+
+
+    <!-- SBU Beans -->
+    <bean id="sbu1" class="com.example.lab1.xmlconfig.lab1_3.SBU">
+        <constructor-arg index="0" value="10" type="int"/>
+        <constructor-arg index="1" value="HR-BU"/>
+        <constructor-arg index="2" value="Human Resourses"/>
+        <constructor-arg index="3" value="Steve Rogers"/>
+        <constructor-arg index="4">
+            <list>
+                <ref bean="emp1"/>
+                <ref bean="emp2"/>
+            </list>
+        </constructor-arg>
+    </bean>
+    <bean id="sbu2" class="com.example.lab1.xmlconfig.lab1_3.SBU">
+        <constructor-arg index="0" value="11" type="int"/>
+        <constructor-arg index="1" value="DEV-BU"/>
+        <constructor-arg index="2" value="Development"/>
+        <constructor-arg index="3" value="Bruce Banner"/>
+        <constructor-arg index="4">
+            <list>
+                <ref bean="emp3"/>
+                <ref bean="emp4"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+
+</beans>
