@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="emp1" class="com.example.lab1.xmlconfig.lab1_1.Employee">
+        <constructor-arg index="0" value="101" type="int"/>
+        <constructor-arg index="1" value="Harry Potter"/>
+        <constructor-arg index="2" value="45000" type="double"/>
+        <constructor-arg index="3" value="HR-BU"/>
+        <constructor-arg index="4" value="34" type="int"/>
+    </bean>
+    <bean id="emp2" class="com.example.lab1.xmlconfig.lab1_1.Employee">
+        <constructor-arg index="0" value="102" type="int"/>
+        <constructor-arg index="1" value="Ron Weasly"/>
+        <constructor-arg index="2" value="55000" type="double"/>
+        <constructor-arg index="3" value="DEV-BU"/>
+        <constructor-arg index="4" value="35" type="int"/>
+    </bean>
+    <bean id="emp3" class="com.example.lab1.xmlconfig.lab1_1.Employee">
+        <constructor-arg index="0" value="103" type="int"/>
+        <constructor-arg index="1" value="Hermione Granger"/>
+        <constructor-arg index="2" value="75000" type="double"/>
+        <constructor-arg index="3" value="EDU-BU"/>
+        <constructor-arg index="4" value="35" type="int"/>
+    </bean>
+    <bean id="emp4" class="com.example.lab1.xmlconfig.lab1_1.Employee">
+        <constructor-arg index="0" value="104" type="int"/>
+        <constructor-arg index="1" value="Draco Malfoy"/>
+        <constructor-arg index="2" value="75000" type="double"/>
+        <constructor-arg index="3" value="MAN-BU"/>
+        <constructor-arg index="4" value="33" type="int"/>
+    </bean>
+</beans>
