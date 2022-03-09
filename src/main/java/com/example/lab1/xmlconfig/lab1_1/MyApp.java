@@ -7,7 +7,7 @@ import org.springframework.core.io.Resource;
 
 public class MyApp {
     public static void main(String[] args) {
-        Resource resource = new ClassPathResource("applicationContextXml.xml");
+        Resource resource = new ClassPathResource("applicationContextXml_1.xml");
         BeanFactory factory = new XmlBeanFactory(resource);
 
         Employee emp1 = (Employee) factory.getBean("emp1");
